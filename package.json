@@ -1,0 +1,36 @@
+{
+  "name": "diswin",
+  "version": "1.0.0",
+  "description": "LOOK Token with Ad Rewards and Staking System on BSC",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network bscTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network bsc",
+    "verify:testnet": "hardhat verify --network bscTestnet",
+    "verify:mainnet": "hardhat verify --network bsc"
+  },
+  "keywords": [
+    "ethereum",
+    "bsc",
+    "defi",
+    "staking",
+    "rewards"
+  ],
+  "author": "diswin",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.7",
+    "dotenv": "^16.0.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
